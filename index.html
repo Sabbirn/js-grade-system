@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRADE</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <style>
+      .grade-input {
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        box-shadow: 5px 5px 5px #eee;
+      }
+      @media (max-width: 600px) {
+        .dn {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="container">
+        <h2 class="text-center mt-3">GRADE SYSTEM USING JS</h2>
+        <hr />
+        <div class="grade-input col-lg-4 offset-lg-4 mt-5">
+          <div class="input-group mb-3">
+            <span class="input-group-text dn" id="basic-addon1"
+              >Enter Grade</span
+            >
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Grade Number"
+              id="gNum"
+            />
+          </div>
+          <button class="mb-3 w-100 btn btn-outline-primary" id="subBtn">
+            Submit
+          </button>
+          <p id="ptag" class="mb-0"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
